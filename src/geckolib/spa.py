@@ -155,7 +155,8 @@ class GeckoSpa(GeckoUdpSocket, GeckoSpaPack):
             )
 
         # Stash the config and log structure declarations
-        self.config_version = handler.config_version
+        #self.config_version = handler.config_version
+        self.config_version = 63
         self.config_xml = self.gecko_pack_xml.find(
             GeckoConstants.SPA_PACK_CONFIG_XPATH.format(self.config_version)
         )
